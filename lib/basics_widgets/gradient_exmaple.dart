@@ -17,6 +17,8 @@ class _GradientExampleState extends State<GradientExample> {
         children: [
           Container(
             height: 200.0,
+            padding: const EdgeInsets.all(20.0),
+            margin: const EdgeInsets.all(10.0),
             decoration: const BoxDecoration(
               borderRadius: BorderRadius.all(Radius.circular(20)),
               gradient: LinearGradient(

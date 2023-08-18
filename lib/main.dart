@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'basics_widgets/gradient_exmaple.dart';
+import 'basics_widgets/buttons_examples.dart';
 
 void main() => runApp(const MyApp());
 
@@ -14,11 +14,11 @@ class MyApp extends StatelessWidget {
       title: 'Personal Expenses',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        // This is the theme of your application.
-        // primarySwatch: Colors.indigo,
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 183, 244, 216))
-      ),
-      home: const GradientExample(),
+          // This is the theme of your application.
+          // primarySwatch: Colors.indigo,
+          colorScheme: ColorScheme.fromSeed(
+              seedColor: const Color.fromARGB(255, 183, 244, 216))),
+      home: const ButtonsExamples(),
     );
   }
 }
@@ -58,10 +58,11 @@ class _MyHomePageState extends State<MyHomePage> {
         title: const Text(
           'Colored Progress Bar Demo',
           strutStyle: StrutStyle(height: 8.0),
-          style:
-              TextStyle(fontStyle: FontStyle.italic, backgroundColor: Color.fromARGB(255, 183, 193, 172),),
+          style: TextStyle(
+            fontStyle: FontStyle.italic,
+            backgroundColor: Color.fromARGB(255, 183, 193, 172),
+          ),
         ),
-
       ),
       body: Center(
         child: Column(

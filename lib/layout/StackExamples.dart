@@ -52,7 +52,7 @@ class _StackExamplesState extends State<StackExamples> {
         children: [
           ListTile(
             title: const Text("alignmentDirectional:"),
-            trailing: DropdownButton(
+            leading: DropdownButton(
               value: _alignmentDirectional,
               items: kAlignmentDirectionalVals
                   .map(

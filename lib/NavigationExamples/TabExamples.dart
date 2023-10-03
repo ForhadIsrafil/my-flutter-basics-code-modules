@@ -32,19 +32,22 @@ class _TabExamplesState extends State<TabExamples> {
     const Tab(
         icon: Icon(
           Icons.cloud,
-          color: Colors.redAccent,size: 40.0,
+          color: Colors.redAccent,
+          size: 40.0,
         ),
         text: "Tab1"),
     const Tab(
         icon: Icon(
           Icons.alarm,
-          color: Colors.redAccent,size: 40.0,
+          color: Colors.redAccent,
+          size: 40.0,
         ),
         text: "Tab2"),
     const Tab(
         icon: Icon(
           Icons.forum,
-          color: Colors.redAccent, size: 40.0,
+          color: Colors.redAccent,
+          size: 40.0,
         ),
         text: "Tab3")
   ];
@@ -73,7 +76,8 @@ class _TabExamplesState extends State<TabExamples> {
                 borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(10),
                     topRight: Radius.circular(10)),
-                color: Colors.white, shape: BoxShape.rectangle),
+                color: Colors.white,
+                shape: BoxShape.rectangle),
             tabs: _kTabs,
           ),
         ),

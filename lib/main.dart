@@ -5,6 +5,7 @@ import 'layout/StackExamples.dart';
 import 'ListsExamples/ExpansionTileExample.dart';
 import 'AppBarExamples/ConvexAppBarExample.dart';
 import 'AsyncExamples/StreamControllerExamples.dart';
+import 'AnimationsBasic/HeroAnimationExample.dart';
 
 void main() => runApp(const MyApp());
 
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
           // primarySwatch: Colors.indigo,
           colorScheme: ColorScheme.fromSeed(
               seedColor: const Color.fromARGB(255, 183, 244, 216))),
-      home: const StreamControllerExample(),
+      home: const HeroAnimationExample(),
     );
   }
 }

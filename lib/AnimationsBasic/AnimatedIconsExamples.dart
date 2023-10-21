@@ -57,11 +57,11 @@ class _AnimatedIconsExamplesState extends State<AnimatedIconsExamples> {
 
 // Adapted from Robert Brunhage's tutorial (https://youtu.be/ILATAD57gIc).
 class _AnimIconDemoBox extends StatefulWidget {
-  final AnimatedIconData iconData;
-  final String name;
-
   const _AnimIconDemoBox(
       {super.key, required this.iconData, required this.name});
+
+  final AnimatedIconData iconData;
+  final String name;
 
   @override
   State<_AnimIconDemoBox> createState() => _AnimIconDemoBoxState();

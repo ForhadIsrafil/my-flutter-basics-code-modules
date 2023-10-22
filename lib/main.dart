@@ -1,11 +1,12 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'basics_widgets/dropdown_examples.dart';
-import 'layout/StackExamples.dart';
-import 'ListsExamples/ExpansionTileExample.dart';
-import 'AppBarExamples/ConvexAppBarExample.dart';
-import 'AsyncExamples/StreamControllerExamples.dart';
-import 'AnimationsBasic/AnimatedContainerExample.dart';
+import 'BasicsExamples/basics_widgets/dropdown_examples.dart';
+import 'BasicsExamples/layout/StackExamples.dart';
+import 'BasicsExamples/ListsExamples/ExpansionTileExample.dart';
+import 'BasicsExamples/AppBarExamples/ConvexAppBarExample.dart';
+import 'BasicsExamples/AsyncExamples/StreamControllerExamples.dart';
+import 'BasicsExamples/AnimationsBasic/AnimatedContainerExample.dart';
+import 'AdvancedExamples/AnimationExamples/AnimatedWidgetExamples.dart';
 
 void main() => runApp(const MyApp());
 
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
           // primarySwatch: Colors.indigo,
           colorScheme: ColorScheme.fromSeed(
               seedColor: const Color.fromARGB(255, 183, 244, 216))),
-      home: const AnimatedContainerExample(),
+      home: const AnimatedWidgetExamples(),
     );
   }
 }

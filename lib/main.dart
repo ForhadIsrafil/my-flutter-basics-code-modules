@@ -6,7 +6,7 @@ import 'BasicsExamples/ListsExamples/ExpansionTileExample.dart';
 import 'BasicsExamples/AppBarExamples/ConvexAppBarExample.dart';
 import 'BasicsExamples/AsyncExamples/StreamControllerExamples.dart';
 import 'BasicsExamples/AnimationsBasic/AnimatedContainerExample.dart';
-import 'AdvancedExamples/AnimationExamples/AnimatedWidgetExamples.dart';
+import 'AdvancedExamples/AnimationExamples/AnimatedTextExamples.dart';
 
 void main() => runApp(const MyApp());
 
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
           // primarySwatch: Colors.indigo,
           colorScheme: ColorScheme.fromSeed(
               seedColor: const Color.fromARGB(255, 183, 244, 216))),
-      home: const AnimatedWidgetExamples(),
+      home: const AnimatedTextExamples(),
     );
   }
 }

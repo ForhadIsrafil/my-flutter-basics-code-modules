@@ -1,11 +1,5 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'BasicsExamples/basics_widgets/dropdown_examples.dart';
-import 'BasicsExamples/layout/StackExamples.dart';
-import 'BasicsExamples/ListsExamples/ExpansionTileExample.dart';
-import 'BasicsExamples/AppBarExamples/ConvexAppBarExample.dart';
-import 'BasicsExamples/AsyncExamples/StreamControllerExamples.dart';
-import 'BasicsExamples/AnimationsBasic/AnimatedContainerExample.dart';
 import 'AdvancedExamples/AnimationExamples/AnimatedTextExamples.dart';
 
 void main() => runApp(const MyApp());
@@ -30,6 +24,8 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key});
+
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
@@ -46,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void startProgress() {
     // Update the progress value every 1 second
-    Timer.periodic(Duration(seconds: 1), (timer) {
+    Timer.periodic(const Duration(seconds: 1), (timer) {
       setState(() {
         if (_progressValue >= 0.9) {
           timer.cancel();

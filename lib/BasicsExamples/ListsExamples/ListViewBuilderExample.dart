@@ -10,8 +10,8 @@ class ListViewBuilderExample extends StatefulWidget {
 class _ListViewBuilderExampleState extends State<ListViewBuilderExample> {
   @override
   Widget build(BuildContext context) {
-    const _numItems = 20;
-    const _biggerFont = TextStyle(fontSize: 18.0);
+    const numItems = 20;
+    const biggerFont = TextStyle(fontSize: 18.0);
 
     Widget _buildRow(int? idx) {
       return ListTile(
@@ -20,7 +20,7 @@ class _ListViewBuilderExampleState extends State<ListViewBuilderExample> {
         ),
         title: Text(
           "Item $idx",
-          style: _biggerFont,
+          style: biggerFont,
         ),
         trailing: const Icon(Icons.dashboard),
       );
@@ -29,7 +29,7 @@ class _ListViewBuilderExampleState extends State<ListViewBuilderExample> {
     return Scaffold(
       appBar: AppBar(),
       body: ListView.separated(
-        itemCount: _numItems,
+        itemCount: numItems,
         padding: const EdgeInsets.all(16.0),
         separatorBuilder: (BuildContext context, int i) => const Divider(
           color: Colors.cyan,

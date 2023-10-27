@@ -26,15 +26,15 @@ class _RowColumnExampleState extends State<RowColumnExample> {
   bool _isRow = true;
 
   MainAxisSize _mainAxisSize = MainAxisSize.max;
-  MainAxisAlignment _mainAxisAlignment = MainAxisAlignment.start;
-  CrossAxisAlignment _crossAxisAlignment = CrossAxisAlignment.start;
+  final MainAxisAlignment _mainAxisAlignment = MainAxisAlignment.start;
+  final CrossAxisAlignment _crossAxisAlignment = CrossAxisAlignment.start;
 
   @override
   Widget build(BuildContext context) {
-    final _appbarButtons = _getBottomBar();
+    final appbarButtons = _getBottomBar();
     return Scaffold(
       body: _buidBody(),
-      bottomNavigationBar: _appbarButtons,
+      bottomNavigationBar: appbarButtons,
     );
   }
 
